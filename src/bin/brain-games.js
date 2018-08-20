@@ -1,3 +1,3 @@
 #! node
-//import index from '..';
+import index from '..';
 console.log("Welcome to the Brain Games!");
