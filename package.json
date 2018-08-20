@@ -1,10 +1,12 @@
 {
   "name": "brain-games-echo",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "My firts project for hexlet.io. I hope it's not the last. This is a just casual project (for someone).",
   "main": "dist/index.js",
   "keywords": [
-    "hexlet", "learning", "pain"
+    "hexlet",
+    "learning",
+    "pain"
   ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
