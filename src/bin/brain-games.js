@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-//import index from '..';
+import index from '..';
 console.log("Welcome to the Brain Games!");
-console.log("Goodbye!");
+console.log("Goodbye!111");
