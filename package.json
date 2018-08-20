@@ -3,6 +3,9 @@
   "version": "1.0.12",
   "description": "my-project",
   "main": "index.js",
+  "bin": {
+     "brain-games": "dist/bin/brain-games.js"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
