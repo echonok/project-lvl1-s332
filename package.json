@@ -1,6 +1,6 @@
 {
   "name": "brain-games-echo",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "my-project",
   "main": "index.js",
   "scripts": {
