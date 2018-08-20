@@ -3,6 +3,9 @@
   "version": "1.0.18",
   "description": "My firts project for hexlet.io. I hope it's not the last. This is a just casual project (for someone).",
   "main": "dist/index.js",
+  "keywords": [
+    "hexlet", "learning", "pain"
+  ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -17,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/echonok/project-lvl1-s332.git"
   },
-  "author": "",
+  "author": "Nikolay Elovsky",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/echonok/project-lvl1-s332/issues"
