@@ -1,20 +1,10 @@
 {
-  "name": "brain-games-echonok",
+  "name": "brain-games-echo",
   "version": "1.0.0",
-  "description": "[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)",
+  "description": "my-project",
   "main": "index.js",
-  "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "babel-node": "babel-node",
-    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,11 +15,8 @@
   "bugs": {
     "url": "https://github.com/echonok/project-lvl1-s332/issues"
   },
-  "homepage": "https://github.com/echonok/project-lvl1-s332#readme"
-  "bin": {
-     "brain-games": "dist/bin/brain-games.js"
-   }
-  "files": [
-    "dist"
-  ],
+  "homepage": "https://github.com/echonok/project-lvl1-s332#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0"
+  }
 }
