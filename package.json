@@ -13,7 +13,7 @@
   },
   "scripts": {
     "babel-node": "babel-node",
-    "build": "babel src --out-dir dist --source-maps inline",
+    //"build": "babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
   "repository": {
