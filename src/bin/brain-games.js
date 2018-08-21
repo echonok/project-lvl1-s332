@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import helloThere from '..';
+console.log('111');
 
-helloThere();
+//import helloThere from '..';
+
+//helloThere();
