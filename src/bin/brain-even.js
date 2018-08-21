@@ -2,4 +2,5 @@
 
 import startGame from '../games/even';
 console.log('brain-even');
-startGame();
+console.log(startGame);
+//startGame();
