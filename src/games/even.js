@@ -1,9 +1,17 @@
-import readlineSync from 'readline-sync';
+import GameOfEven from '..';
+import getRandomNumber from '../tools';
 
-const startGame = () => {
-  console.log('Start!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello! ${userName} :)`);
+const mainRule = 'Answer "yes" if number even otherwise answer "no".';
+const isEven = num => num % 2 === 0;
+const min = 1;
+const max = 10;
+
+const genGameData = () => {
+  const question = getRandomNumber(min, max);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export default startGame;
+const startGameOfEven = () => GameOfEven(genGameData, mainRule);
+
+export default startGameOfEven;
