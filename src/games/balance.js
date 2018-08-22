@@ -3,9 +3,6 @@ import getRandomNumber from '../tools';
 
 const mainRule = 'Balance the given number.';
 
-const someString = getRandomNumber(100, 1000);
-
-const arr = String(someString).split('').map(element => Number(element));
 
 const balancer = (someArr) => {
   const minElem = Math.min(...someArr);
@@ -23,6 +20,8 @@ const balancer = (someArr) => {
 };
 
 const genGameData = () => {
+  const someString = getRandomNumber(100, 1000);
+  const arr = String(someString).split('').map(element => Number(element));
   const question = someString;
   const correctAnswer = balancer(arr);
   return [question, correctAnswer];
