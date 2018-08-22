@@ -5,7 +5,7 @@ const mainRule = 'Balance the given number.';
 
 const someString = getRandomNumber(100, 1000);
 
-let arr = String(someString).split('').map(element => Number(element));
+const arr = String(someString).split('').map(element => Number(element));
 
 const balancer = (someArr) => {
   const minElem = Math.min(...someArr);
@@ -14,8 +14,11 @@ const balancer = (someArr) => {
     return someArr.sort().join('');
   }
   
-  someArr[someArr.findIndex(elem => elem === minElem)] = minElem + 1;
-  someArr[someArr.findIndex(elem => elem === maxElem)] = maxElem - 1;
+  const indexOfMin = someArr.findIndex(elem => elem === minElem);
+  const indexOfMax = someArr.findIndex(elem => elem === maxElem);
+
+  someArr[indexOfMin] = minElem + 1;
+  someArr[indexOfMax] = maxElem - 1;
 
   return balancer(someArr);
 };
@@ -26,6 +29,6 @@ const genGameData = () => {
   return [question, correctAnswer];
 };
 
-const startGameOfEven = () => startNewGame(genGameData, mainRule);
+const startGameOfBalance = () => startNewGame(genGameData, mainRule);
 
 export default startGameOfBalance;
