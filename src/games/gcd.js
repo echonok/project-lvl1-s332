@@ -12,7 +12,7 @@ const commonDivisor = (num1, num2) => {
 		if (numMax % numMin === 0 && firstMin % numMin === 0) {
 			return String(numMin);
   		}
-		return commonDivisor(numMin - 1, numMax, firstMin);
+		return findCommonDivisor(numMin - 1, numMax, firstMin);
 	}
 	return findCommonDivisor(numMin, numMax, numMin)
 };
