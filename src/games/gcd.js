@@ -10,7 +10,7 @@ const commonDivisor = (numMin, numMax, firstMin) => {
     return numMin;
   }
   return commonDivisor(numMin - 1, numMax, firstMin);
-}
+};
 
 const genGameData = () => {
   const num1 = getRandomNumber(min, max);
