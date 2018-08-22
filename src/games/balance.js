@@ -22,9 +22,9 @@ const genGameData = () => {
   let listOfNumber = '';
   const numberOfNumber = 5;
   let i = 0;
-  while ( i < numberOfNumber) {
-  	listOfNumber += String(getRandomNumber(0, 9));
-  	i++;
+  while (i < numberOfNumber) {
+    listOfNumber += String(getRandomNumber(0, 9));
+    i = i + 1;
   }
   const question = listOfNumber;
   const correctAnswer = balancer(listOfNumber);
