@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const numberOfAttempts = 3;
 
-const GameOfEven = (game, rule) => {
+const startNewGame = (game, rule) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${rule}\n`);
   const userName = readlineSync.question('May I ask your name ? ');
@@ -23,4 +23,4 @@ const GameOfEven = (game, rule) => {
   };
   iter(0);
 };
-export default GameOfEven;
+export default startNewGame;

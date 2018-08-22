@@ -1,4 +1,4 @@
-import GameOfEven from '..';
+import startNewGame from '..';
 import getRandomNumber from '../tools';
 
 const mainRule = 'Answer "yes" if number even otherwise answer "no".';
@@ -12,6 +12,6 @@ const genGameData = () => {
   return [question, correctAnswer];
 };
 
-const startGameOfEven = () => GameOfEven(genGameData, mainRule);
+const startGameOfEven = () => startNewGame(genGameData, mainRule);
 
 export default startGameOfEven;
