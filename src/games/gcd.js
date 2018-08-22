@@ -6,15 +6,15 @@ const min = 1;
 const max = 100;
 
 const commonDivisor = (num1, num2) => {
-  const numMin = Math.min(num1, num2);
-  const numMax = Math.max(num1, num2);
+  const minNum = Math.min(num1, num2);
+  const maxNum = Math.max(num1, num2);
   const findCommonDivisor = (numMin, numMax, firstMin) => {
     if (numMax % numMin === 0 && firstMin % numMin === 0) {
       return String(numMin);
     }
     return findCommonDivisor(numMin - 1, numMax, firstMin);
-  }
-  return findCommonDivisor(numMin, numMax, numMin)
+  };
+  return findCommonDivisor(minNum, maxNum, minNum);
 };
 
 const genGameData = () => {
