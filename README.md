@@ -46,3 +46,10 @@ Find the greatest common divisor of given numbers.
 ```
 brain-gcd
 ```
+
+### Balance game
+Balance the given number.
+
+```
+brain-balance
+```
