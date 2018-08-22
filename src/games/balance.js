@@ -4,7 +4,6 @@ import getRandomNumber from '../tools';
 const mainRule = 'Balance the given number.';
 const balancer = (listOfNumber) => {
   const arrOfNum = listOfNumber.split('').map(element => Number(element));
-  console.log(arrOfNum);
   while (Math.max(...arrOfNum) - Math.min(...arrOfNum) > 1) {
     const minElem = Math.min(...arrOfNum);
     const maxElem = Math.max(...arrOfNum);
