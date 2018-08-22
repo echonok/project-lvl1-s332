@@ -39,3 +39,10 @@ What is the result of the expression?
 ```
 brain-calc
 ```
+
+### GCD game
+Find the greatest common divisor of given numbers.
+
+```
+brain-gcd
+```
