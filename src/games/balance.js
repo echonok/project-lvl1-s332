@@ -24,7 +24,7 @@ const genGameData = () => {
   let i = 0;
   while (i < numberOfNumber) {
     listOfNumber += String(getRandomNumber(0, 9));
-    let i = i + 1;
+    i += 1;
   }
   const question = listOfNumber;
   const correctAnswer = balancer(listOfNumber);
