@@ -54,3 +54,4 @@ Balance the given number.
 ```
 brain-balance
 ```
+[![asciicast](https://asciinema.org/a/uRHiQjxCHgX4R3SysXZfWq1Nz.png)](https://asciinema.org/a/uRHiQjxCHgX4R3SysXZfWq1Nz)
