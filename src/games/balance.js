@@ -11,7 +11,7 @@ const balancer = (listOfNumber) => {
     const indexOfMin = arrOfNum.findIndex(elem => elem === minElem);
     const indexOfMax = arrOfNum.findIndex(elem => elem === maxElem);
     arrOfNum.splice(indexOfMin, 1);
-    arrOfNum.splice(indexOfMax-1, 1);
+    arrOfNum.splice(indexOfMax - 1, 1);
     arrOfNum.push(minElem + 1);
     arrOfNum.push(maxElem - 1);
   }
@@ -21,10 +21,10 @@ const balancer = (listOfNumber) => {
 const genGameData = () => {
   let listOfNumber = '';
   const numberOfNumber = 5;
-  for (i = 0; i < numberOfNumber; i++) { 
+  for (let i = 0; i < numberOfNumber; i = i + 1) {
     listOfNumber += String(getRandomNumber(0, 9));
   }
-  const question = someString;
+  const question = listOfNumber;
   const correctAnswer = balancer(listOfNumber);
   return [question, correctAnswer];
 };
