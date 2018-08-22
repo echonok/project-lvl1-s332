@@ -34,6 +34,6 @@ const genGameData = () => {
   return [question, correctAnswer];
 };
 
-const startGameOfCalc = () => startNewGame(genGameData, rule);
+const startGameOfCalc = () => startNewGame(genGameData, mainRule);
 
 export default startGameOfCalc;
