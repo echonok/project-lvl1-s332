@@ -7,7 +7,7 @@ const max = 100;
 
 const commonDivisor = (numMin, numMax, firstMin) => {
   if (numMax % numMin === 0 && firstMin % numMin === 0) {
-    return numMin;
+    return String(numMin);
   }
   return commonDivisor(numMin - 1, numMax, firstMin);
 };
