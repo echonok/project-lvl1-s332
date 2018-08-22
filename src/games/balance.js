@@ -13,7 +13,6 @@ const balancer = (someArr) => {
   if (maxElem - minElem <= 1) {
     return someArr.sort().join('');
   }
-  
   const indexOfMin = someArr.findIndex(elem => elem === minElem);
   const indexOfMax = someArr.findIndex(elem => elem === maxElem);
 
