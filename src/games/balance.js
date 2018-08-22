@@ -15,10 +15,10 @@ const balancer = (someArr) => {
   }
   const indexOfMin = someArr.findIndex(elem => elem === minElem);
   const indexOfMax = someArr.findIndex(elem => elem === maxElem);
-
-  someArr[indexOfMin] = minElem + 1;
-  someArr[indexOfMax] = maxElem - 1;
-
+  someArr.splice(indexOfMin, 1);
+  someArr.splice(indexOfMax, 1);
+  someArr.push(minElem + 1);
+  someArr.push(maxElem - 1);
   return balancer(someArr);
 };
 
