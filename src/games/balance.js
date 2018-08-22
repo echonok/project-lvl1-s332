@@ -3,27 +3,43 @@ import getRandomNumber from '../tools';
 
 const mainRule = 'Balance the given number.';
 
+const balancer = (listOfNumber) => {
+  
+  const arrOfNum = listOfNumber.split('').map(element => Number(element));
 
-const balancer = (someArr) => {
-  const minElem = Math.min(...someArr);
-  const maxElem = Math.max(...someArr);
-  if (maxElem - minElem <= 1) {
-    return someArr.sort().join('');
+  console.log(arrOfNum);
+
+  while (Math.max(...arrOfNum) - Math.min(...arrOfNum) > 1) {
+
+    const minElem = Math.min(...arrOfNum);
+    const maxElem = Math.max(...arrOfNum);
+
+    const indexOfMin = arrOfNum.findIndex(elem => elem === minElem);
+    const indexOfMax = arrOfNum.findIndex(elem => elem === maxElem);
+
+    arrOfNum.splice(indexOfMin, 1);
+    arrOfNum.splice(indexOfMax-1, 1);
+  
+    arrOfNum.push(minElem + 1);
+    arrOfNum.push(maxElem - 1);
+
   }
-  const indexOfMin = someArr.findIndex(elem => elem === minElem);
-  const indexOfMax = someArr.findIndex(elem => elem === maxElem);
-  someArr.splice(indexOfMin, 1);
-  someArr.splice(indexOfMax, 1);
-  someArr.push(minElem + 1);
-  someArr.push(maxElem - 1);
-  return balancer(someArr);
+  
+  return arrOfNum.sort().join('');
+
 };
 
 const genGameData = () => {
-  const someString = getRandomNumber(100, 1000);
-  const arr = String(someString).split('').map(element => Number(element));
+  
+  let listOfNumber = '';
+
+  const numberOfNumber = 5;
+  for (i = 0; i < numberOfNumber; i++) { 
+    listOfNumber += String(getRandomNumber(0, 9));
+  }
+
   const question = someString;
-  const correctAnswer = balancer(arr);
+  const correctAnswer = balancer(listOfNumber);
   return [question, correctAnswer];
 };
 
