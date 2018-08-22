@@ -46,6 +46,7 @@ Find the greatest common divisor of given numbers.
 ```
 brain-gcd
 ```
+[![asciicast](https://asciinema.org/a/E28FfqH7zTIuV5DXJKFTEP42U.png)](https://asciinema.org/a/E28FfqH7zTIuV5DXJKFTEP42U)
 
 ### Balance game
 Balance the given number.
