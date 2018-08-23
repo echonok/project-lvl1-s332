@@ -13,7 +13,8 @@ const progressionGenerator = (sizeProgr = 10, startProgr = 4, stepProgr = 2) => 
 }
 
 const genGameData = () => {
-  let listOfNumber = '';
+  
+  let fullProgression = (progressionGenerator(numberOfNumber, startPosition, stepPosition));
   const numberOfNumber = 10;
   const startPosition = getRandomNumber(10, 100);
   const stepPosition = getRandomNumber(1, 9);
