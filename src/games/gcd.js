@@ -10,7 +10,7 @@ const commonDivisor = (num1, num2) => {
   const maxNum = Math.max(num1, num2);
   const findCommonDivisor = (numMin, numMax, firstMin) => {
     if (numMax % numMin === 0 && firstMin % numMin === 0) {
-      return String(numMin);
+      return numMin;
     }
     return findCommonDivisor(numMin - 1, numMax, firstMin);
   };
@@ -20,7 +20,7 @@ const commonDivisor = (num1, num2) => {
 const genGameData = () => {
   const num1 = getRandomNumber(min, max);
   const num2 = getRandomNumber(min, max);
-  const correctAnswer = commonDivisor(num1, num2);
+  const correctAnswer = String(commonDivisor(num1, num2));
   const question = `${num1} ${num2}`;
   return [question, correctAnswer];
 };
