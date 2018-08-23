@@ -11,10 +11,6 @@ const balancer = (listOfNumber) => {
     const indexOfMax = arrOfNum.findIndex(elem => elem === maxElem);
     arrOfNum[indexOfMin] = minElem + 1;
     arrOfNum[indexOfMax] = maxElem - 1;
-    //arrOfNum.splice(indexOfMin, 1);
-    //arrOfNum.splice(indexOfMax - 1, 1);
-    //arrOfNum.push(minElem + 1);
-    //arrOfNum.push(maxElem - 1);
   }
   return arrOfNum.sort().join('');
 };
