@@ -16,7 +16,7 @@ const balancer = (numberForBalance) => {
 };
 
 const genGameData = () => {
-  const randomNumber =  getRandomNumber(1, 10000);
+  const randomNumber = getRandomNumber(1, 10000);
   const question = randomNumber;
   const correctAnswer = balancer(randomNumber);
   return [question, correctAnswer];
