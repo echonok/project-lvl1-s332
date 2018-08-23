@@ -55,3 +55,10 @@ Balance the given number.
 brain-balance
 ```
 [![asciicast](https://asciinema.org/a/uRHiQjxCHgX4R3SysXZfWq1Nz.png)](https://asciinema.org/a/uRHiQjxCHgX4R3SysXZfWq1Nz)
+
+### Progression game
+What number is missing in this progression?.
+
+```
+brain-progression
+```
