@@ -4,7 +4,7 @@ import getRandomNumber from '../tools';
 const mainRule = 'Is this number prime? (yes/no)';
 
 const isPrime = (someNumber) => {
-  if (num < 2 || (num % 2 === 0 && num !== 2)) {
+  if (someNumber < 2 || (someNumber % 2 === 0 && someNumber !== 2)) {
     return false;
   }
   const maxDivisor = Math.round(Math.sqrt(someNumber)) + 1;
