@@ -4,7 +4,7 @@ import getRandomNumber from '../tools';
 const mainRule = 'Is this number prime? (yes/no)';
 
 const isPrime = (someNumber) => {
-  if (someNumber === 0 || someNumber === 1 || someNumber % 2 === 0) {
+  if (num < 2 || (num % 2 === 0 && num !== 2)) {
     return false;
   }
   const maxDivisor = Math.round(Math.sqrt(someNumber)) + 1;
@@ -17,9 +17,9 @@ const isPrime = (someNumber) => {
 };
 
 const genGameData = () => {
-  const RandomNumber = getRandomNumber(0, 1000);
-  const correctAnswer = isPrime(RandomNumber) ? 'yes' : 'no';
-  const question = `${RandomNumber}`;
+  const randomNumber = getRandomNumber(0, 1000);
+  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
+  const question = `${randomNumber}`;
   return [question, correctAnswer];
 };
 
