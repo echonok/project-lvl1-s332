@@ -21,39 +21,41 @@ const chooseOfGame = () => {
 
 const mainMenu = () => {
   console.log('Welcome to the Brain Games!');
+  const choser = () => {
   switch (chooseOfGame()) {
     case '1':
       startGameOfEven();
-      chooseOfGame();
+      choser();
       break;
     case '2':
       startGameOfCalc();
-      chooseOfGame();
+      choser();
       break;
     case '3':
       startGameOfGCD();
-      chooseOfGame();
+      choser();
       break;
     case '4':
       startGameOfBalance();
-      chooseOfGame();
+      choser();
       break;
     case '5':
       startGameOfProgression();
-      chooseOfGame();
+      choser();
       break;
     case '6':
       startGameOfPrime();
-      chooseOfGame();
+      choser();
       break;
     case '0':
       console.log('Good bye!');
       break;
     default:
       console.log('You have to choose game or exit!');
-      chooseOfGame();
+      choser();
       break;
   }
+};
 };
 
 export default mainMenu;
