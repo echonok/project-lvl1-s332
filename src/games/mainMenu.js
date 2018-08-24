@@ -56,6 +56,7 @@ const mainMenu = () => {
       break;
   }
 };
+  choser();
 };
 
 export default mainMenu;
