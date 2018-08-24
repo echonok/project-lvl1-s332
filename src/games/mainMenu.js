@@ -15,7 +15,7 @@ const chooseOfGame = () => {
   console.log('6. Game of prime');
   console.log('exti');
   const chosenGame = readlineSync.question('Game:');
-  return chosenGame();
+  return chosenGame;
 };
 
 const mainMenu = () => {
