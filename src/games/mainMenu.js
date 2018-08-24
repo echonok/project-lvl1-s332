@@ -16,7 +16,7 @@ const chooseOfGame = () => {
   console.log('exti');
   const chosenGame = readlineSync.question('Game:');
   return chosenGame();
-}
+};
 
 const mainMenu = () => {
   console.log('Welcome to the Brain Games! Choose your game:');
