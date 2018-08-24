@@ -14,12 +14,12 @@ npm i -g brain-games-echo
 This will install package globaly
 [![asciicast](https://asciinema.org/a/Jg6DolQMqrP6LyGL9kesrJ36t.png)](https://asciinema.org/a/Jg6DolQMqrP6LyGL9kesrJ36t)
 
-### Greetings
+### Greetings and main menu
 May I have your name?
 ```
 brain-games
 ```
-[![asciicast](https://asciinema.org/a/psRQ9IKfoe0cGpS7JUPTl7l8w.png)](https://asciinema.org/a/psRQ9IKfoe0cGpS7JUPTl7l8w)
+[![asciicast](https://asciinema.org/a/MfJz4s6cor121APFYwIICv9GX.png)](https://asciinema.org/a/MfJz4s6cor121APFYwIICv9GX)
 
 ### Even game
 Answer "yes" if number even otherwise answer "no".
