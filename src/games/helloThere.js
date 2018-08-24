@@ -7,9 +7,7 @@ import startGameOfProgression from './progression';
 import startGameOfPrime from './prime';
 
 const helloThere = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`So, hi ${userName} :). Choose your game:`);
+  console.log('Welcome to the Brain Games! Choose your game:');
   console.log('1. Game of even:');
   console.log('2. Game of calc:');
   console.log('3. Game of GCD:');
