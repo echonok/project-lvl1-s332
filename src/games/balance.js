@@ -3,7 +3,7 @@ import getRandomNumber from '../tools';
 
 const mainRule = 'Balance the given number.';
 const balancer = (numberForBalance) => {
-  const arrOfNum = numberForBalance.split('').map(element => Number(element));
+  const arrOfNum = String(numberForBalance).split('').map(element => Number(element));
   while (Math.max(...arrOfNum) - Math.min(...arrOfNum) > 1) {
     const minElem = Math.min(...arrOfNum);
     const maxElem = Math.max(...arrOfNum);

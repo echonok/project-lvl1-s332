@@ -7,6 +7,7 @@ import startGameOfProgression from './progression';
 import startGameOfPrime from './prime';
 
 const chooseOfGame = () => {
+  console.log('');
   console.log('Choose your game:');
   console.log('1. Game of even');
   console.log('2. Game of calc');
@@ -24,27 +25,34 @@ const choser = () => {
     case '1':
       startGameOfEven();
       choser();
+      break;
     case '2':
       startGameOfCalc();
       choser();
+      break;
     case '3':
       startGameOfGCD();
       choser();
+      break;
     case '4':
       startGameOfBalance();
       choser();
+      break;
     case '5':
       startGameOfProgression();
       choser();
+      break;
     case '6':
       startGameOfPrime();
       choser();
+      break;
     case '0':
       console.log('Good bye!');
-      return;
+      break;
     default:
       console.log('You have to choose game or exit!');
       choser();
+      break;
   }
 };
 
