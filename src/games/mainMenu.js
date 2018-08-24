@@ -19,43 +19,36 @@ const chooseOfGame = () => {
   return chosenGame;
 };
 
+const choser = () => {
+  switch (chooseOfGame()) {
+    case '1':
+      startGameOfEven();
+      choser();
+    case '2':
+      startGameOfCalc();
+      choser();
+    case '3':
+      startGameOfGCD();
+      choser();
+    case '4':
+      startGameOfBalance();
+      choser();
+    case '5':
+      startGameOfProgression();
+      choser();
+    case '6':
+      startGameOfPrime();
+      choser();
+    case '0':
+      console.log('Good bye!');
+    default:
+      console.log('You have to choose game or exit!');
+      choser();
+  }
+};
+
 const mainMenu = () => {
   console.log('Welcome to the Brain Games!');
-  const choser = () => {
-    switch (chooseOfGame()) {
-      case '1':
-        startGameOfEven();
-        choser();
-        break;
-      case '2':
-        startGameOfCalc();
-        choser();
-        break;
-      case '3':
-        startGameOfGCD();
-        choser();
-        break;
-      case '4':
-        startGameOfBalance();
-        choser();
-        break;
-      case '5':
-        startGameOfProgression();
-        choser();
-        break;
-      case '6':
-        startGameOfPrime();
-        choser();
-        break;
-      case '0':
-        console.log('Good bye!');
-        break;
-      default:
-        console.log('You have to choose game or exit!');
-        choser();
-        break;
-    }
-  };
   choser();
 };
 
