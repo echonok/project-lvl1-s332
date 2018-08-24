@@ -41,6 +41,7 @@ const choser = () => {
       choser();
     case '0':
       console.log('Good bye!');
+      return;
     default:
       console.log('You have to choose game or exit!');
       choser();
