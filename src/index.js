@@ -6,7 +6,7 @@ const startNewGame = (game, rule) => {
   console.log(`\n${rule}\n`);
   const iter = (acc) => {
     if (acc === numberOfAttempts) {
-      console.log(`Congratulations!`);
+      console.log('Congratulations!');
       return;
     }
     const [riddleNum, correctAnswer] = game();
