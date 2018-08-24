@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import startGameOfEven from 'even';
-import startGameOfCalc from '../games/calc';
-import startGameOfGCD from '../games/gcd';
-import startGameOfBalance from '../games/balance';
-import startGameOfProgression from '../games/progression';
-import startGameOfPrime from '../games/prime';
+import startGameOfEven from './even';
+import startGameOfCalc from './calc';
+import startGameOfGCD from './gcd';
+import startGameOfBalance from './balance';
+import startGameOfProgression from './progression';
+import startGameOfPrime from './prime';
 
 
 
