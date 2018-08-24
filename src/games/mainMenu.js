@@ -6,7 +6,7 @@ import startGameOfBalance from './balance';
 import startGameOfProgression from './progression';
 import startGameOfPrime from './prime';
 
-const helloThere = () => {
+const mainMenu = () => {
   console.log('Welcome to the Brain Games! Choose your game:');
   console.log('1. Game of even:');
   console.log('2. Game of calc:');
@@ -40,4 +40,4 @@ const helloThere = () => {
   }
 };
 
-export default helloThere;
+export default mainMenu;
