@@ -6,16 +6,21 @@ import startGameOfBalance from './balance';
 import startGameOfProgression from './progression';
 import startGameOfPrime from './prime';
 
+const chooseOfGame = () => {
+  console.log('1. Game of even');
+  console.log('2. Game of calc');
+  console.log('3. Game of GCD');
+  console.log('4. Game of balance');
+  console.log('5. Game of progression');
+  console.log('6. Game of prime');
+  console.log('exti');
+  const chosenGame = readlineSync.question('Game:');
+  return chosenGame();
+}
+
 const mainMenu = () => {
   console.log('Welcome to the Brain Games! Choose your game:');
-  console.log('1. Game of even:');
-  console.log('2. Game of calc:');
-  console.log('3. Game of GCD:');
-  console.log('4. Game of balance:');
-  console.log('5. Game of progression:');
-  console.log('6. Game of prime:');
-  const chosenGame = readlineSync.question('Game: ');
-  switch (chosenGame) {
+  switch (chooseOfGame()) {
     case '1':
       startGameOfEven();
       break;
@@ -34,8 +39,12 @@ const mainMenu = () => {
     case '6':
       startGameOfPrime();
       break;
+    case 'exit':
+      console.log('Good bye!');
+      break;
     default:
-      startGameOfEven();
+      console.log('You have to choose game or exit!');
+      chooseOfGame();
       break;
   }
 };
