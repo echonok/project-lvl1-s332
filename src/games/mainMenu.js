@@ -22,40 +22,40 @@ const chooseOfGame = () => {
 const mainMenu = () => {
   console.log('Welcome to the Brain Games!');
   const choser = () => {
-  switch (chooseOfGame()) {
-    case '1':
-      startGameOfEven();
-      choser();
-      break;
-    case '2':
-      startGameOfCalc();
-      choser();
-      break;
-    case '3':
-      startGameOfGCD();
-      choser();
-      break;
-    case '4':
-      startGameOfBalance();
-      choser();
-      break;
-    case '5':
-      startGameOfProgression();
-      choser();
-      break;
-    case '6':
-      startGameOfPrime();
-      choser();
-      break;
-    case '0':
-      console.log('Good bye!');
-      break;
-    default:
-      console.log('You have to choose game or exit!');
-      choser();
-      break;
-  }
-};
+    switch (chooseOfGame()) {
+      case '1':
+        startGameOfEven();
+        choser();
+        break;
+      case '2':
+        startGameOfCalc();
+        choser();
+        break;
+      case '3':
+        startGameOfGCD();
+        choser();
+        break;
+      case '4':
+        startGameOfBalance();
+        choser();
+        break;
+      case '5':
+        startGameOfProgression();
+        choser();
+        break;
+      case '6':
+        startGameOfPrime();
+        choser();
+        break;
+      case '0':
+        console.log('Good bye!');
+        break;
+      default:
+        console.log('You have to choose game or exit!');
+        choser();
+        break;
+    }
+  };
   choser();
 };
 
