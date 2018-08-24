@@ -3,9 +3,7 @@ import readlineSync from 'readline-sync';
 const numberOfAttempts = 3;
 
 const startNewGame = (game, rule) => {
-  console.log('Welcome to the Brain Games!');
   console.log(`${rule}\n`);
-  const userName = readlineSync.question('May I ask your name ? ');
   const iter = (acc) => {
     if (acc === numberOfAttempts) {
       console.log(`Congratulations, ${userName}!`);
