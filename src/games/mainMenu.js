@@ -6,9 +6,8 @@ import startGameOfBalance from './balance';
 import startGameOfProgression from './progression';
 import startGameOfPrime from './prime';
 
-const chooseOfGame = () => {
-  console.log('');
-  console.log('Choose your game:');
+const chooseOfGame = (userName) => {
+  console.log(`\nChoose your games ${userName}:\n`);
   console.log('1. Game of even');
   console.log('2. Game of calc');
   console.log('3. Game of GCD');
@@ -16,49 +15,50 @@ const chooseOfGame = () => {
   console.log('5. Game of progression');
   console.log('6. Game of prime');
   console.log('0. exti');
-  const chosenGame = readlineSync.question('Game:');
+  const chosenGame = readlineSync.question('\n->');
   return chosenGame;
 };
 
-const choser = () => {
-  switch (chooseOfGame()) {
+const choser = (userName) => {
+  switch (chooseOfGame(userName)) {
     case '1':
       startGameOfEven();
-      choser();
+      choser(userName);
       break;
     case '2':
       startGameOfCalc();
-      choser();
+      choser(userName);
       break;
     case '3':
       startGameOfGCD();
-      choser();
+      choser(userName);
       break;
     case '4':
       startGameOfBalance();
-      choser();
+      choser(userName);
       break;
     case '5':
       startGameOfProgression();
-      choser();
+      choser(userName);
       break;
     case '6':
       startGameOfPrime();
-      choser();
+      choser(userName);
       break;
     case '0':
-      console.log('Good bye!');
+      console.log(`Good bye, ${userName}!\n`);
       break;
     default:
-      console.log('You have to choose game or exit!');
-      choser();
+      console.log(`${userName}, you have to choose game or exit!\n`);
+      choser(userName);
       break;
   }
 };
 
 const mainMenu = () => {
   console.log('Welcome to the Brain Games!');
-  choser();
+  const userName = readlineSync.question('May I ask your name?');
+  choser(userName);
 };
 
 export default mainMenu;
