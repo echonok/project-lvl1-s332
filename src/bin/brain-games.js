@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import helloThere from '../games/helloThere';
+import mainMenu from '../games/mainMenu';
 
-helloThere();
+mainMenu();
